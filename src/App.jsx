@@ -35,7 +35,7 @@ function App() {
    */
   const loadArticles = async (page = 1) => {
     if (!validateApiKey()) {
-      setError('API Key not configured. Please add REACT_API_KEY to your .env file');
+      setError('API Key not configured. Please add REACT_APP_NEWS_API_KEY to your .env file');
       return;
     }
 
@@ -127,9 +127,9 @@ function App() {
    * Initial load on component mount
    */
   useEffect(() => {
-    if (!process.env.REACT_API_KEY) {
+    if (!process.env.REACT_APP_NEWS_API_KEY) {
       setError(
-        'NewsAPI key is not configured. Please create a .env file in the root directory and add: REACT_API_KEY=your_api_key_here'
+        'NewsAPI key is not configured. Please create a .env file in the root directory and add: REACT_APP_NEWS_API_KEY=your_api_key_here'
       );
     }
   }, []);
