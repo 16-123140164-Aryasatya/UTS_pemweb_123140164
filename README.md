@@ -90,7 +90,7 @@ npm install
 ### 3. Setup Environment Variables
 Buat file `.env` di root folder dan tambahkan API key dari NewsAPI:
 ```
-REACT_APP_NEWS_API_KEY=your_api_key_here
+REACT_APP_NEWS_API_KEY=api_key.
 ```
 
 **Cara mendapatkan API Key:**
