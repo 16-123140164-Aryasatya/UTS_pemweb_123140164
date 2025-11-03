@@ -1,5 +1,5 @@
 // NewsAPI Service - API Integration dengan Error Handling
-const API_KEY = process.env.REACT_APP_NEWS_API_KEY;
+const API_KEY = process.env.REACT_API_KEY;
 const BASE_URL = 'https://newsapi.org/v2';
 
 /**
@@ -99,7 +99,7 @@ export const getCategories = () => {
  */
 export const validateApiKey = () => {
   if (!API_KEY || API_KEY === 'undefined') {
-    console.error('NewsAPI Key not found! Please add REACT_APP_NEWS_API_KEY to .env file');
+    console.error('NewsAPI Key not found! Please add REACT_API_KEY to .env file');
     return false;
   }
   return true;
